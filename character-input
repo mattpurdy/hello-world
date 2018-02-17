@@ -1,7 +1,6 @@
 name = str(input("What's your name? "))
 age = (2017 - int(input("How old are you? "))) + 100
-age_100 = ("{}, you will turn 100 in {}") .format(name, age)
-print(age_100)
+age_100 = ("{}, you will turn 100 in {}".format(name, age))
 
 
 """
