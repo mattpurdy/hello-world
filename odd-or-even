@@ -2,11 +2,9 @@ num = int(input("Pick a number: "))
 check = int(input("Pick another number: "))
 
 if num % check == 0:
-  div = ("{} can be evenly divided by {}").format(num, check)
-  print(div)
+  print("{} can be evenly divided by {}".format(num, check))
 else:
-  nope = ("{} cannot be evenly divided by {}").format(num, check)
-  print(nope)
+  print("{} cannot be evenly divided by {}".format(num, check))
 
 
 """
