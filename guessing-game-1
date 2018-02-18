@@ -1,0 +1,24 @@
+import random
+
+x = (random.randint(1,9))
+
+count = 0
+
+while True:
+  guess = input("Guess my number: ")
+  if guess == "exit":
+    break
+  if int(guess) not in range(1,10):
+    print("It's got to be a number between 1 and 9!")
+    count += 1
+  elif int(guess) > x:
+    print("Nope, the number is lower.")
+    count += 1
+  elif int(guess) < x:
+    print("Nope, the number is higher.")
+    count += 1
+  elif int(guess) == x:
+    print("Good job! You got it right!")
+    count += 1
+
+print("You made {} guesses." .format(count))
